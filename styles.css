@@ -1,6 +1,18 @@
 @font-face {
   font-family: type;
+  src: url("url(fonts/AmericanTypewriter.ttc).eot");
+  src: url("url(fonts/AmericanTypewriter.ttc).eot#iefix") format("embedded-opentype"), url("url(fonts/AmericanTypewriter.ttc).ttf") format("truetype"), url("url(fonts/AmericanTypewriter.ttc).svg#type") format("svg"), url("url(fonts/AmericanTypewriter.ttc).woff") format("woff"); }
+
+@font-face {
+  font-family: type;
   src: url(fonts/AmericanTypewriter.ttc); }
+
+@font-face {
+  font-family: badguy;
+  src: url(fonts/BadGuyBlack.otf); }
+
+@font-face {
+  src: url(fonts/SignPainter.ttc); }
 
 .home {
   background-image: url(img/background.jpg);
@@ -9,7 +21,7 @@
   background-attachment: fixed;
   background-size: cover;
   color: #521F19;
-  font-family: type; }
+  font-family: SignPainter; }
 
 .home img {
   width: 100%;
@@ -17,13 +29,13 @@
 
 .enter {
   background-color: transparent;
-  border: 10px solid #521F19;
+  border: 5px solid #521F19;
   color: white;
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
-  font-family: type; }
+  font-family: SignPainter; }
 
 .about {
   background-color: #521F19;
@@ -46,7 +58,8 @@ header {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  font-family: SignPainter; }
   @media (max-width: 40em) {
     .menu {
       -webkit-box-orient: vertical;
@@ -66,22 +79,25 @@ header {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    color: white;
+    color: #808080;
     text-decoration: none;
     text-align: center;
-    padding: 15px; }
+    padding: 15px;
+    font-size: 2.5em; }
+  .menu a:hover {
+    color: white; }
 
 .limit-min {
   font-size: 4vw; }
-  @media (max-width: 750px) {
+  @media (max-width: 1750px) {
     .limit-min {
-      font-size: 30px; } }
+      font-size: 70px; } }
 
 .limit-min-max {
   font-size: 3vw; }
-  @media (max-width: 666.66667px) {
+  @media (max-width: 1333.33333px) {
     .limit-min-max {
-      font-size: 20px; } }
+      font-size: 40px; } }
   @media (min-width: 1666.66667px) {
     .limit-min-max {
       font-size: 50px; } }

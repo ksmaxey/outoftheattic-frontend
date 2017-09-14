@@ -1,6 +1,7 @@
 //COLORS
 
 $maroon: #521F19;
+$gray: #808080;
 
 //FONT FACE
 
@@ -43,9 +44,20 @@ $maroon: #521F19;
   font-size: $responsive;
 }
 
+@include font-face(type,url(fonts/AmericanTypewriter.ttc));
+
 @font-face {
     font-family: type;
     src: url(fonts/AmericanTypewriter.ttc);
+}
+
+@font-face {
+  font-family: badguy;
+  src: url(fonts/BadGuyBlack.otf);
+}
+
+@font-face {
+  src: url(fonts/SignPainter.ttc);
 }
 
 .home {
@@ -55,7 +67,7 @@ $maroon: #521F19;
 			background-attachment: fixed;
 			background-size:  cover;
       color: $maroon;
-      font-family: type;
+      font-family: SignPainter;
 }
 
 .home img {
@@ -65,13 +77,13 @@ $maroon: #521F19;
 
 .enter {
   background-color: transparent;
-  border: 10px solid $maroon;
+  border: 5px solid $maroon;
   color: white;
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
-  font-family: type;
+  font-family: SignPainter;
 }
 
 .about {
@@ -89,6 +101,7 @@ header {
   display:flex;
   align-items: center;
   justify-content: center;
+  font-family: SignPainter;
   @media (max-width:40em){
     flex-direction:column;
   }
@@ -103,17 +116,21 @@ header {
   }
   a{
     flex-grow:1;
-    color:white;
+    color:$gray;
     text-decoration:none;
     text-align:center;
     padding: 15px;
+    font-size: 2.5em;
+  }
+  a:hover {
+    color: white;
   }
 }
 
 .limit-min {
-  @include responsive-font(4vw, 30px);
+  @include responsive-font(4vw, 70px);
 }
 
 .limit-min-max {
-  @include responsive-font(3vw, 20px, 50px);
+  @include responsive-font(3vw, 40px, 50px);
 }
