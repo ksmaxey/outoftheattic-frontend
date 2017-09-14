@@ -76,6 +76,38 @@ $maroon: #521F19;
 
 .about {
   background-color: $maroon;
+  color: white;
+}
+
+header {
+  max-width: 100%;
+  width: 2000px;
+  margin: auto;
+}
+
+.menu{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width:40em){
+    flex-direction:column;
+  }
+  .logo {
+    max-width: 200px;
+    padding-top: 10px;
+  }
+  .icons {
+    max-width: 50px;
+    margin: 0 -25px;
+    padding-right: 30px;
+  }
+  a{
+    flex-grow:1;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding: 15px;
+  }
 }
 
 .limit-min {
