@@ -1,4 +1,52 @@
+//COLORS
+
 $maroon: #993333;
+
+//FONT FACE
+
+@mixin font-face($name, $url) {
+  @font-face {
+    font-family: #{$name};
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot#iefix') format("embedded-opentype"),
+         url('#{$url}.ttf') format('truetype'),
+         url('#{$url}.svg##{$name}') format('svg'),
+         url('#{$url}.woff') format('woff');
+
+    @content;
+  }
+}
+
+//VIEWPORT FONTS
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+@font-face {
+    font-family: type;
+    src: url(fonts/AmericanTypewriter.ttc);
+}
 
 .home {
 			background-image: url(img/background.jpg);
@@ -7,6 +55,12 @@ $maroon: #993333;
 			background-attachment: fixed;
 			background-size:  cover;
       color: $maroon;
+      font-family: type;
+}
+
+.home img {
+  width: 100%;
+  max-width: 1000px;
 }
 
 .enter {
@@ -16,6 +70,14 @@ $maroon: #993333;
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
-  font-size: 60px;
   cursor: pointer;
+  font-family: type;
+}
+
+.limit-min {
+  @include responsive-font(4vw, 30px);
+}
+
+.limit-min-max {
+  @include responsive-font(3vw, 20px, 50px);
 }

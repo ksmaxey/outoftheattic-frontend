@@ -1,10 +1,19 @@
+@font-face {
+  font-family: type;
+  src: url(fonts/AmericanTypewriter.ttc); }
+
 .home {
   background-image: url(img/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: #993333; }
+  color: #993333;
+  font-family: type; }
+
+.home img {
+  width: 100%;
+  max-width: 1000px; }
 
 .enter {
   background-color: transparent;
@@ -13,5 +22,20 @@
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
-  font-size: 60px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: type; }
+
+.limit-min {
+  font-size: 4vw; }
+  @media (max-width: 750px) {
+    .limit-min {
+      font-size: 30px; } }
+
+.limit-min-max {
+  font-size: 3vw; }
+  @media (max-width: 666.66667px) {
+    .limit-min-max {
+      font-size: 20px; } }
+  @media (min-width: 1666.66667px) {
+    .limit-min-max {
+      font-size: 50px; } }
