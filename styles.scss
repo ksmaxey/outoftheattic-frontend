@@ -1,6 +1,6 @@
 //COLORS
 
-$maroon: #993333;
+$maroon: #521F19;
 
 //FONT FACE
 
@@ -72,6 +72,10 @@ $maroon: #993333;
   display: inline-block;
   cursor: pointer;
   font-family: type;
+}
+
+.about {
+  background-color: $maroon;
 }
 
 .limit-min {

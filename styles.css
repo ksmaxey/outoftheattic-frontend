@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: #993333;
+  color: #521F19;
   font-family: type; }
 
 .home img {
@@ -17,13 +17,16 @@
 
 .enter {
   background-color: transparent;
-  border: 10px solid #993333;
+  border: 10px solid #521F19;
   color: white;
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
   font-family: type; }
+
+.about {
+  background-color: #521F19; }
 
 .limit-min {
   font-size: 4vw; }
