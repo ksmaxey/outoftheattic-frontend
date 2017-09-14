@@ -1,0 +1,17 @@
+.home {
+  background-image: url(img/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #993333; }
+
+.enter {
+  background-color: transparent;
+  border: 10px solid #993333;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 60px;
+  cursor: pointer; }
