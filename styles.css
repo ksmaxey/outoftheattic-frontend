@@ -1,3 +1,4 @@
+/*--------------IMPORTS----------------*/
 @font-face {
   font-family: type;
   src: url("url(fonts/AmericanTypewriter.ttc).eot");
@@ -14,32 +15,20 @@
 @font-face {
   src: url(fonts/SignPainter.ttc); }
 
-.home {
-  background-image: url(img/background.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: #521F19;
-  font-family: SignPainter; }
+.limit-min {
+  font-size: 4vw; }
+  @media (max-width: 1750px) {
+    .limit-min {
+      font-size: 70px; } }
 
-.home img {
-  width: 100%;
-  max-width: 1000px; }
-
-.enter {
-  background-color: transparent;
-  border: 5px solid #521F19;
-  color: white;
-  padding: 10px 30px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  font-family: SignPainter; }
-
-.about {
-  background-color: #521F19;
-  color: white; }
+.limit-min-max {
+  font-size: 3vw; }
+  @media (max-width: 1333.33333px) {
+    .limit-min-max {
+      font-size: 40px; } }
+  @media (min-width: 1666.66667px) {
+    .limit-min-max {
+      font-size: 50px; } }
 
 header {
   max-width: 100%;
@@ -87,17 +76,39 @@ header {
   .menu a:hover {
     color: white; }
 
-.limit-min {
-  font-size: 4vw; }
-  @media (max-width: 1750px) {
-    .limit-min {
-      font-size: 70px; } }
+footer {
+  width: 100%; }
+  footer div {
+    max-width: 300px; }
 
-.limit-min-max {
-  font-size: 3vw; }
-  @media (max-width: 1333.33333px) {
-    .limit-min-max {
-      font-size: 40px; } }
-  @media (min-width: 1666.66667px) {
-    .limit-min-max {
-      font-size: 50px; } }
+.footer-svg {
+  max-width: 20px; }
+
+.home {
+  background-image: url(img/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #521F19;
+  font-family: SignPainter; }
+
+.home img {
+  width: 100%;
+  max-width: 1000px; }
+
+.enter {
+  background-color: transparent;
+  border: 5px solid #521F19;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-family: SignPainter; }
+
+.about, .featured, .events, .blog, .appraisals, .contact {
+  background-color: #521F19;
+  color: white; }
+  .about iframe, .featured iframe, .events iframe, .blog iframe, .appraisals iframe, .contact iframe {
+    max-width: 100%; }

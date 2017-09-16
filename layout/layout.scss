@@ -1,0 +1,89 @@
+@import "layout/grid-settings.scss";
+
+//HEADER
+
+header {
+  max-width: 100%;
+  width: 2000px;
+  margin: auto;
+}
+
+.menu{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: SignPainter;
+  @media (max-width:40em){
+    flex-direction:column;
+  }
+  .logo {
+    max-width: 200px;
+    padding-top: 10px;
+  }
+  .icons {
+    max-width: 50px;
+    margin: 0 -25px;
+    padding-right: 30px;
+  }
+  a{
+    flex-grow:1;
+    color:$gray;
+    text-decoration:none;
+    text-align:center;
+    padding: 15px;
+    font-size: 2.5em;
+  }
+  a:hover {
+    color: white
+  }
+}
+
+//FOOTER
+
+footer {
+  width: 100%;
+  div {
+    max-width: 300px;
+  }
+}
+
+.footer-svg {
+  max-width: 20px;
+}
+//HOME SCREEN
+
+.home {
+			background-image: url(img/background.jpg);
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+      color: $maroon;
+      font-family: SignPainter;
+}
+
+.home img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.enter {
+  background-color: transparent;
+  border: 5px solid $maroon;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-family: SignPainter;
+}
+
+//TEMPLATE
+
+.about, .featured, .events, .blog, .appraisals, .contact {
+  background-color: $maroon;
+  color: white;
+  iframe {
+    max-width: 100%;
+  }
+}

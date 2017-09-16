@@ -1,0 +1,10 @@
+$page-width: 100%;
+
+@mixin grid() {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  margin-left: 0 auto;
+  max-width: $page-width;
+  position: relative;
+}
