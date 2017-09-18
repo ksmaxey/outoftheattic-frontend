@@ -3,37 +3,44 @@
 //HEADER
 
 header {
-  max-width: 100%;
-  width: 2000px;
-  margin: auto;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.menu{
+.menu {
   display:flex;
   align-items: center;
   justify-content: center;
   font-family: SignPainter;
   @media (max-width:40em){
-    flex-direction:column;
+    flex-direction: column;
   }
+
   .logo {
     max-width: 200px;
     padding-top: 10px;
   }
+
+  .icons-div {
+    padding-left: 10px;
+  }
+
   .icons {
     max-width: 50px;
     margin: 0 -25px;
     padding-right: 30px;
   }
-  a{
-    flex-grow:1;
+
+  a {
+    flex-grow: 1;
     color:$gray;
     text-decoration:none;
     text-align:center;
     padding: 15px;
     font-size: 2.5em;
   }
-  a:hover {
+  &:hover {
     color: white
   }
 }
@@ -42,29 +49,39 @@ header {
 
 footer {
   width: 100%;
-  div {
-    max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-grow: 1;
+  background-color: rgba(128, 128, 128, 0.5);
+  ul {
+    list-style: none;
+    li {
+      padding: 20px;
+      text-align: center;
+    }
   }
 }
 
 .footer-svg {
-  max-width: 20px;
+  max-width: 40px;
 }
 //HOME SCREEN
 
 .home {
-			background-image: url(img/background.jpg);
-			background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-      color: $maroon;
-      font-family: SignPainter;
-}
-
-.home img {
-  width: 100%;
-  max-width: 1000px;
+  background-image: url(img/background.jpg);
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+  color: $maroon;
+  font-family: SignPainter;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+    img {
+      width: 100%;
+      max-width: 1000px;
+    }
 }
 
 .enter {
@@ -76,6 +93,21 @@ footer {
   display: inline-block;
   cursor: pointer;
   font-family: SignPainter;
+  margin: auto;
+}
+
+//ABOUT
+
+.about {
+  font-family: type;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  span {
+    font-family: SignPainter;
+    font-size: 80px;
+    float: right;
+    padding-bottom: 20px;
+  }
 }
 
 //TEMPLATE
