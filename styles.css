@@ -30,6 +30,18 @@
     .limit-min-max {
       font-size: 50px; } }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  padding: 10px;
+  width: 100%; }
+
 header {
   max-width: 1600px;
   width: 100%;
@@ -62,7 +74,7 @@ header {
   .menu .icons-div {
     padding-left: 10px; }
   .menu .icons {
-    max-width: 50px;
+    max-width: 80px;
     margin: 0 -25px;
     padding-right: 30px; }
   .menu a {
@@ -75,25 +87,17 @@ header {
     text-align: center;
     padding: 15px;
     font-size: 2.5em; }
-  .menu:hover {
+  .menu a:hover {
     color: white; }
 
 footer {
   width: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  background-color: rgba(128, 128, 128, 0.5); }
+  background-color: rgba(128, 128, 128, 0.5);
+  position: absolute;
+  font-family: type; }
   footer ul {
     list-style: none; }
     footer ul li {
-      padding: 20px;
       text-align: center; }
 
 .footer-svg {
@@ -111,8 +115,7 @@ footer {
   width: 1200px;
   max-width: 100%; }
   .home img {
-    width: 100%;
-    max-width: 1000px; }
+    width: 100%; }
 
 .enter {
   background-color: transparent;
@@ -132,11 +135,41 @@ footer {
   .about span {
     font-family: SignPainter;
     font-size: 80px;
-    float: right;
     padding-bottom: 20px; }
+  .about h1 {
+    font-family: BadGuyBlack;
+    font-size: 2.5em;
+    text-align: center; }
+
+#emailkern {
+  letter-spacing: 2px; }
+
+#form {
+  width: 700px;
+  margin: auto; }
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+textarea {
+  opacity: 0.3;
+  font-size: 15px;
+  width: 100%;
+  max-width: 800px;
+  resize: none; }
+
+input[type="submit"] {
+  width: 100%;
+  max-width: 400px;
+  float: right; }
 
 .about, .featured, .events, .blog, .appraisals, .contact {
   background-color: #521F19;
   color: white; }
   .about iframe, .featured iframe, .events iframe, .blog iframe, .appraisals iframe, .contact iframe {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-bottom: 20px; }
