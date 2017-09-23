@@ -1,4 +1,5 @@
 /*--------------IMPORTS----------------*/
+@import url(layout/grid-settings.css);
 @font-face {
   font-family: type;
   src: url("url(fonts/AmericanTypewriter.ttc).eot");
@@ -93,12 +94,25 @@ header {
 footer {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.5);
-  position: absolute;
-  font-family: type; }
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  font-family: type;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   footer ul {
     list-style: none; }
     footer ul li {
-      text-align: center; }
+      text-align: center;
+      float: left;
+      padding: 30px; }
 
 .footer-svg {
   max-width: 40px; }
@@ -139,13 +153,33 @@ footer {
   .about h1 {
     font-family: BadGuyBlack;
     font-size: 2.5em;
-    text-align: center; }
+    text-align: center;
+    color: #cc9900; }
 
 #emailkern {
   letter-spacing: 2px; }
 
+.featured h1 {
+  font-family: BadGuyBlack;
+  font-size: 2.5em;
+  text-align: center;
+  color: #cc9900; }
+
+.contact {
+  background-image: url(img/contact_background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .contact h1 {
+    color: #cc9900;
+    font-family: BadGuyBlack;
+    font-size: 2.5em;
+    text-align: center; }
+
 #form {
   width: 700px;
+  max-width: 100%;
   margin: auto; }
 
 input[type="text"],
@@ -160,8 +194,8 @@ textarea {
   resize: none; }
 
 input[type="submit"] {
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
+  max-width: 100%;
   float: right; }
 
 .about, .featured, .events, .blog, .appraisals, .contact {
