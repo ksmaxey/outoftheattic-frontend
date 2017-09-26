@@ -94,10 +94,9 @@ header {
 footer {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.5);
-  position: fixed;
+  position: relative;
   left: 0px;
   bottom: 0px;
-  width: 100%;
   font-family: type;
   display: -webkit-box;
   display: -webkit-flex;
@@ -111,11 +110,16 @@ footer {
     list-style: none; }
     footer ul li {
       text-align: center;
-      float: left;
-      padding: 30px; }
+      padding: 10px; }
 
 .footer-svg {
   max-width: 40px; }
+
+.home-container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  display: inline-block; }
 
 .home {
   background-image: url(img/background.jpg);
@@ -124,37 +128,38 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   color: #521F19;
-  font-family: SignPainter;
-  margin: auto;
-  width: 1200px;
-  max-width: 100%; }
+  font-family: SignPainter; }
   .home img {
-    width: 100%; }
+    width: 100%;
+    max-width: 600px; }
 
 .enter {
   background-color: transparent;
   border: 5px solid #521F19;
   color: white;
   padding: 10px 30px;
-  text-align: center;
-  display: inline-block;
+  text-decoration: none;
   cursor: pointer;
-  font-family: SignPainter;
-  margin: auto; }
+  font-family: SignPainter; }
 
-.about {
+.about p {
   font-family: type;
   letter-spacing: 1px;
   line-height: 1.5; }
-  .about span {
+  .about p span {
     font-family: SignPainter;
     font-size: 80px;
     padding-bottom: 20px; }
-  .about h1 {
+  .about p h1, .about p h2 {
     font-family: BadGuyBlack;
     font-size: 2.5em;
     text-align: center;
     color: #cc9900; }
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
 
 #emailkern {
   letter-spacing: 2px; }
@@ -264,3 +269,16 @@ input[type="submit"] {
     margin-left: auto;
     display: block;
     padding-bottom: 20px; }
+
+svg:hover {
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6); }
+
+svg {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }

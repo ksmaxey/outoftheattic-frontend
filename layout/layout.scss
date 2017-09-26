@@ -64,10 +64,9 @@ header {
 footer {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.5);
-  position: fixed;
+  position: relative;
   left:0px;
   bottom:0px;
-  width:100%;
   font-family: type;
   display: flex;
   justify-content: center;
@@ -75,8 +74,7 @@ footer {
     list-style: none;
     li {
       text-align: center;
-      float: left;
-      padding: 30px;
+      padding: 10px;
     }
   }
 }
@@ -86,6 +84,13 @@ footer {
 }
 //HOME SCREEN
 
+.home-container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  display: inline-block;
+}
+
 .home {
   background-image: url(img/background.jpg);
 	background-position: center center;
@@ -94,11 +99,9 @@ footer {
 	background-size: cover;
   color: $maroon;
   font-family: SignPainter;
-  margin: auto;
-  width: 1200px;
-  max-width: 100%;
     img {
       width: 100%;
+      max-width: 600px;
     }
 }
 
@@ -107,16 +110,14 @@ footer {
   border: 5px solid $maroon;
   color: white;
   padding: 10px 30px;
-  text-align: center;
-  display: inline-block;
+  text-decoration: none;
   cursor: pointer;
   font-family: SignPainter;
-  margin: auto;
 }
 
 //ABOUT
 
-.about {
+.about p {
   font-family: type;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -125,12 +126,18 @@ footer {
     font-size: 80px;
     padding-bottom: 20px;
   }
-  h1 {
+  h1, h2 {
     font-family: BadGuyBlack;
     font-size: em(40px);
     text-align: center;
     color: $yellow;
   }
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #emailkern {

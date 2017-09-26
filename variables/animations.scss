@@ -1,0 +1,9 @@
+//Make SVGs Grow on Rollover
+
+svg:hover {
+  transform: scale(1.6);
+}
+svg {
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+}
