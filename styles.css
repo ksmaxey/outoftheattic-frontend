@@ -34,10 +34,11 @@
 /* Featured Items */
 .section {
   display: none;
-  padding: 2rem; }
+  padding-bottom: 2rem; }
   @media screen and (min-width: 768px) {
     .section {
-      padding: 4rem; } }
+      padding-right: 4rem;
+      padding-left: 4rem; } }
   @supports (display: grid) {
     .section {
       display: block; } }
@@ -152,6 +153,8 @@ html {
   box-sizing: inherit; }
 
 body {
+  background-color: #521F19;
+  color: white;
   padding: 10px;
   width: 100%; }
 
@@ -210,6 +213,7 @@ footer {
   left: 0px;
   bottom: 0px;
   font-family: type;
+  letter-spacing: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -226,12 +230,6 @@ footer {
 
 .footer-svg {
   max-width: 40px; }
-
-.home-container {
-  width: 1200px;
-  max-width: 100%;
-  margin: auto;
-  display: inline-block; }
 
 .home {
   background-image: url(img/background.jpg);
@@ -262,46 +260,48 @@ footer {
     font-family: SignPainter;
     font-size: 80px;
     padding-bottom: 20px; }
-  .about p h1, .about p h2 {
-    font-family: BadGuyBlack;
-    font-size: 2.5em;
-    text-align: center;
-    color: #cc9900; }
 
-.about-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto; }
+.about h2 {
+  font-family: badguy;
+  text-align: center;
+  color: #cc9900; }
 
 #emailkern {
   letter-spacing: 2px; }
+
+iframe {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding-bottom: 20px; }
 
 .featured-container {
   width: 1200px;
   max-width: 100%; }
 
-.featured h1 {
-  font-family: BadGuyBlack;
-  font-size: 2.5em;
+.blog h2 {
+  font-family: badguy;
+  font-size: 1.875em;
+  letter-spacing: 1.5px;
   text-align: center;
-  color: #cc9900; }
+  color: #521F19; }
 
-.events h1 {
-  font-family: BadGuyBlack;
-  font-size: 2.5em;
-  text-align: center;
-  color: #cc9900; }
+.blog h3 {
+  font-family: badguy;
+  font-size: 1.25em;
+  color: #521F19; }
 
-.blog h1 {
-  font-family: BadGuyBlack;
-  font-size: 2.5em;
-  text-align: center;
-  color: #cc9900; }
+.blog img {
+  max-width: 100%; }
 
-.events-container {
-  width: 100%;
-  max-width: 1200px;
-  background-color: #808080;
+.blog-large,
+.blog-medium,
+.blog-small {
+  padding: 20px; }
+
+.blog-medium img {
+  max-height: 300px;
   margin: auto; }
 
 .event {
@@ -313,35 +313,15 @@ footer {
     max-width: 300px;
     border: 5px solid;
     border-color: #521F19;
-    margin-top: 10px; }
+    margin-top: 30px; }
   .event p {
     font-family: type;
     font-size: 1.875em; }
     .event p span {
-      font-family: BadGuyBlack; }
+      font-family: badguy; }
   .event h2 {
     font-family: SignPainter;
     font-size: 3.125em; }
-  .event button {
-    -webkit-box-shadow: 3px 4px 8px #666666;
-    -moz-box-shadow: 3px 4px 8px #666666;
-    box-shadow: 3px 4px 8px #666666;
-    font-family: type;
-    color: white;
-    font-size: 20px;
-    background: #521F19;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    margin-bottom: 15px; }
-    .event button:hover {
-      background: #cc9900;
-      text-decoration: none; }
-
-.appraisals h1 {
-  font-family: BadGuyBlack;
-  font-size: 2.5em;
-  text-align: center;
-  color: #cc9900; }
 
 .contact {
   background-image: url(img/contact_background.png);
@@ -349,11 +329,6 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  .contact h1 {
-    color: #cc9900;
-    font-family: BadGuyBlack;
-    font-size: 2.5em;
-    text-align: center; }
 
 #form {
   width: 700px;
@@ -376,15 +351,46 @@ input[type="submit"] {
   max-width: 100%;
   float: right; }
 
-.about, .featured, .events, .blog, .appraisals, .contact {
-  background-color: #521F19;
-  color: white; }
-  .about iframe, .featured iframe, .events iframe, .blog iframe, .appraisals iframe, .contact iframe {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    padding-bottom: 20px; }
+.home-container,
+.about-container,
+.events-container,
+.blog-container,
+.appraisals-container,
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+.blog-container,
+.events-container {
+  background-color: #808080; }
+
+.about h1,
+.featured h1,
+.events h1,
+.blog h1,
+.appraisals h1,
+.contact h1 {
+  font-family: badguy;
+  color: #cc9900;
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 1px; }
+
+button {
+  -webkit-box-shadow: 3px 4px 8px #666666;
+  -moz-box-shadow: 3px 4px 8px #666666;
+  box-shadow: 3px 4px 8px #666666;
+  font-family: type;
+  color: white;
+  font-size: 20px;
+  background: #521F19;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-bottom: 15px; }
+  button:hover {
+    background: #cc9900;
+    text-decoration: none; }
 
 svg:hover {
   -webkit-transform: scale(1.6);

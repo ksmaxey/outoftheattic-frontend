@@ -13,10 +13,11 @@ $page-width: 100%;
 
 .section {
   display: none;
-  padding: 2rem;
+  padding-bottom: 2rem;
 
   @media screen and (min-width: 768px) {
-    padding: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 
   @supports(display: grid) {
