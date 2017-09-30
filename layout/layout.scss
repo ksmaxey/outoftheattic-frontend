@@ -1,4 +1,5 @@
 @import "grid-settings.scss";
+@import "dropzone.scss";
 
 html {
   box-sizing: border-box;
@@ -159,7 +160,8 @@ iframe {
 
 //EVENTS
 
-.events {
+.events-container {
+  border: 4px solid $yellow;
 }
 
 //BLOG
@@ -213,10 +215,17 @@ iframe {
 
 //EVENTS
 
+.events-container {
+  background-color: $gray;
+}
+
 .event {
   border-bottom: 7px dotted;
   border-color: white;
   text-align: center;
+  &:last-child {
+    border-bottom: none;
+  }
   img {
     width: 100%;
     max-width: 300px;
@@ -240,7 +249,44 @@ iframe {
 
 //APPRAISALS
 
-.appraisals {
+.appraisals-container {
+  p {
+    letter-spacing: 1.5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"],
+  textarea {
+    border: 4px solid $yellow;
+    opacity: 1;
+  }
+}
+
+.app-first {
+}
+
+.app-message,
+.app-contact,
+.app-button {
+  padding: 5px;
+}
+
+.dropzone,
+.app-first,
+.app-message,
+.app-contact {
+  p {
+    font-family: type;
+    display: inline;
+    &:first-of-type {
+      font-family: badguy;
+      color: $yellow;
+    }
+  }
+}
+
+.dropzone {
+  margin-bottom: 15px;
 }
 
 //CONTACT
@@ -265,10 +311,11 @@ input[type="submit"],
 select,
 textarea {
   opacity: 0.3;
-  font-size: 15px;
+  font-size: em(20px);
   width: 100%;
   max-width: 800px;
   resize: none;
+  font-family: type;
 }
 
 input[type="submit"] {
@@ -288,10 +335,6 @@ input[type="submit"] {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-}
-
-.events-container {
-  background-color: $gray;
 }
 
 //ELEMENT STYLING

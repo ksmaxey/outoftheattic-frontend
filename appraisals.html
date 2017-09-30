@@ -26,6 +26,30 @@
   </header>
   <h1>Appraisals</h1>
   <div class="appraisals-container">
+    <form action="/file-upload" class="dropzone">
+      <div class="fallback">
+        <input name="file" type="file" multiple />
+      </div>
+    </form>
+    <div class="app-first">
+      <p>First</p>
+      <p>Show Us Some Photos (click or drag files to upload)</p>
+    </div>
+    <div class="app-message">
+      <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+      <p>Then</p>
+      <p>Tell Us About Your Item</p>
+    </div>
+    <div class="app-contact">
+      <input type="text" name="name" placeholder="Name" size="25" maxlength="25"/>
+      <input type="email" name="email" placeholder="Email" size="50" maxlength="50"/>
+      <input type="text" name="name" placeholder="Phone" size="25" maxlength="12"/>
+      <p>Lastly</p>
+      <p>Provide Your Information</p>
+    </div>
+    <div class="app-button">
+      <button type="button" name="button">Submit</button>
+    </div>
 
   </div>
 
@@ -107,5 +131,6 @@
       </li>
     </ul>
   </footer>
+  <script src="js/dropzone.js"></script>
 </body>
 </html>
