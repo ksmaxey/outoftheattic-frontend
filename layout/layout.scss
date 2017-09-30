@@ -99,9 +99,12 @@ footer {
 	background-size: cover;
   color: $maroon;
   font-family: SignPainter;
+  display: block;
     img {
-      width: 100%;
-      max-width: 600px;
+      width: 900px;
+      max-width: 100%;
+      margin: auto;
+      display: block;
     }
 }
 
@@ -109,10 +112,18 @@ footer {
   background-color: transparent;
   border: 5px solid $maroon;
   color: white;
-  padding: 10px 30px;
-  text-decoration: none;
+  padding: 10px;
   cursor: pointer;
   font-family: SignPainter;
+  margin: auto;
+  width: 300px;
+  max-width: 100%;
+  display: block;
+}
+
+.enter-button {
+  padding-top: 40px;
+  text-decoration: none;
 }
 
 //ABOUT
@@ -162,6 +173,9 @@ iframe {
 
 .events-container {
   border: 4px solid $yellow;
+  div:last-child {
+    margin-bottom: 100px;
+  }
 }
 
 //BLOG

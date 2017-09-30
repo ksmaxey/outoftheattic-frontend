@@ -650,19 +650,29 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   color: #521F19;
-  font-family: SignPainter; }
+  font-family: SignPainter;
+  display: block; }
   .home img {
-    width: 100%;
-    max-width: 600px; }
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    display: block; }
 
 .enter {
   background-color: transparent;
   border: 5px solid #521F19;
   color: white;
-  padding: 10px 30px;
-  text-decoration: none;
+  padding: 10px;
   cursor: pointer;
-  font-family: SignPainter; }
+  font-family: SignPainter;
+  margin: auto;
+  width: 300px;
+  max-width: 100%;
+  display: block; }
+
+.enter-button {
+  padding-top: 40px;
+  text-decoration: none; }
 
 .about p {
   font-family: type;
@@ -694,6 +704,8 @@ iframe {
 
 .events-container {
   border: 4px solid #cc9900; }
+  .events-container div:last-child {
+    margin-bottom: 100px; }
 
 .blog h2 {
   font-family: badguy;
