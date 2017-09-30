@@ -777,12 +777,7 @@ iframe {
   padding: 10px; }
 
 .appraisals-container button {
-  font-size: 1.5625em; }
-
-.app-message,
-.app-contact,
-.app-button {
-  padding: 5px; }
+  font-size: 1.875em; }
 
 .dropzone p,
 .app-first p,
@@ -797,16 +792,20 @@ iframe {
     font-family: badguy;
     color: #cc9900; }
 
-.app-contact div {
-  padding-bottom: 15px; }
+.app-first,
+.app-message {
+  padding-bottom: 50px; }
+
+.app-contact {
+  padding-bottom: 20px; }
+  .app-contact div:first-child,
+  .app-contact div:nth-child(2) {
+    padding-bottom: 15px; }
 
 .app-button {
   width: 150px;
   padding-top: 20px;
   margin: auto; }
-
-.dropzone {
-  margin-bottom: 15px; }
 
 .contact {
   background-image: url(img/contact_background.png);
@@ -815,27 +814,63 @@ iframe {
   background-attachment: fixed;
   background-size: cover; }
 
+.form-container {
+  color: #cc9900; }
+
 #form {
   width: 700px;
   max-width: 100%;
   margin: auto; }
 
+.form-name,
+.form-email,
+.form-message,
+.form-button {
+  padding-bottom: 20px; }
+
 input[type="text"],
 input[type="email"],
-input[type="submit"],
-select,
 textarea {
   opacity: 0.3;
-  font-size: 1.25em;
+  font-size: 1.875em;
   width: 100%;
   max-width: 800px;
   resize: none;
-  font-family: type; }
+  font-family: type;
+  padding: 20px;
+  border: 4px solid #cc9900; }
 
-input[type="submit"] {
-  width: 400px;
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #521F19; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #521F19;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #521F19;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #521F19; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #521F19; }
+
+.form-button {
   max-width: 100%;
+  padding: 10px;
   float: right; }
+  .form-button button {
+    font-size: 1.875em;
+    color: white;
+    background-color: transparent;
+    opacity: 0.8; }
 
 .home-container,
 .about-container,
