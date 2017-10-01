@@ -753,6 +753,14 @@ iframe {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis; }
 
+.expand aside {
+  font-family: type;
+  letter-spacing: 1.5px;
+  line-height: 1.5; }
+
+.expand img {
+  max-width: 100%; }
+
 .events-container {
   background-color: #808080; }
 
@@ -888,6 +896,7 @@ textarea {
 .about-container,
 .events-container,
 .blog-container,
+.expand-container,
 .appraisals-container,
 .contact-container {
   width: 100%;
@@ -898,6 +907,7 @@ textarea {
 .featured h1,
 .events h1,
 .blog h1,
+.expand h1,
 .appraisals h1,
 .contact h1 {
   font-family: badguy;
@@ -956,6 +966,38 @@ button {
   color: black;
   text-decoration: none;
   cursor: pointer; }
+
+/* Variables */
+/* SCALE */
+.scale {
+  -webkit-transition-property: scale;
+  -o-transition-property: scale;
+  transition-property: scale;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .scale:hover {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: -webkit-transform 0.2s ease-in;
+    -o-transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in; }
+
+@-webkit-keyframes spin {
+  50% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(-180deg); } }
+
+@keyframes spin {
+  50% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(-180deg); } }
 
 svg:hover {
   -webkit-transform: scale(1.6);

@@ -238,6 +238,19 @@ iframe {
   text-overflow: ellipsis;
 }
 
+//Expanded Blog Pages
+
+.expand {
+  aside {
+    font-family: type;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
 //EVENTS
 
 .events-container {
@@ -403,6 +416,7 @@ textarea {
 .about-container,
 .events-container,
 .blog-container,
+.expand-container,
 .appraisals-container,
 .contact-container {
   width: 100%;
@@ -416,6 +430,7 @@ textarea {
 .featured,
 .events,
 .blog,
+.expand,
 .appraisals,
 .contact {
   h1 {
@@ -481,4 +496,42 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+//Scale Effect Keyframe for Splash Screen Image
+
+/* Variables */
+
+//default transition duration
+$duration: .3s;
+
+//disable the highlighting effect when an element is tapped
+@mixin disableTapHighlightColor() {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+//improve performance when doing transitions
+@mixin hardwareAccel() {
+	transform: translateZ(0);
+}
+
+/* SCALE */
+.scale {
+  transition-property:scale;
+  transition-duration:$duration;
+
+  @include disableTapHighlightColor();
+	  @include hardwareAccel();
+
+  &:hover {
+    transform:scale(1.1) rotate(3deg);
+    transition:transform 0.2s ease-in;
+  }
+}
+
+@keyframes spin {
+  50% {
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(-180deg);
+  }
 }
