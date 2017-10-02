@@ -1,5 +1,6 @@
 @import "grid-settings.scss";
 @import "dropzone.scss";
+@import "breakpoints.scss";
 
 html {
   box-sizing: border-box;
@@ -178,6 +179,33 @@ iframe {
   }
 }
 
+.expanded-wrapper,
+.expand-container {
+  width: 100%;
+  background-color: $gray;
+  font-family: type;
+  font-size: em(20px);
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  border: 4px solid $yellow;
+  margin: auto;
+  p {
+    padding: 10px;
+    text-align: justify;
+  }
+  button {
+    margin: 20px;
+  }
+}
+
+.expanded-imagery {
+  img {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+  }
+}
 //BLOG
 
 .blog {
@@ -232,7 +260,7 @@ iframe {
 }
 
 .truncate {
-  width: 240px;
+  width: 310px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -298,6 +326,7 @@ iframe {
     border: 4px solid $yellow;
     opacity: 1;
     padding: 10px;
+    font-size: em(20px);
   }
   button {
     font-size: em(30px);
@@ -493,7 +522,7 @@ button {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
