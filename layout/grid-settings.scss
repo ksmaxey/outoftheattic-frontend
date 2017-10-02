@@ -152,3 +152,33 @@ $page-width: 100%;
     text-align: center;
   }
 }
+
+//Grad Setting For Expanded Blog and Events Pages
+
+.expanded-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  width: 100%;
+  background-color: $gray;
+  font-family: type;
+  font-size: em(20px);
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  border: 4px solid $yellow;
+  margin: auto;
+}
+
+.expanded-imagery {
+  img {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+  }
+
+}
+
+.expanded-text {
+
+}
