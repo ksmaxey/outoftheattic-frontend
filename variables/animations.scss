@@ -7,3 +7,41 @@ svg {
   transition: all 0.5s;
   transform-origin: 50% 50%;
 }
+
+//Scale Effect Keyframe for Splash Screen Image
+
+/* Variables */
+
+//default transition duration
+$duration: .3s;
+
+//disable the highlighting effect when an element is tapped
+@mixin disableTapHighlightColor() {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+//improve performance when doing transitions
+@mixin hardwareAccel() {
+	transform: translateZ(0);
+}
+
+/* SCALE */
+.scale {
+  transition-property:scale;
+  transition-duration:$duration;
+
+  @include disableTapHighlightColor();
+	  @include hardwareAccel();
+
+  &:hover {
+    transform:scale(1.1) rotate(3deg);
+    transition:transform 0.2s ease-in;
+  }
+}
+
+@keyframes spin {
+  50% {
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(-180deg);
+  }
+}

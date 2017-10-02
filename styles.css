@@ -986,6 +986,19 @@ button {
   text-decoration: none;
   cursor: pointer; }
 
+svg:hover {
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6); }
+
+svg {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
 /* Variables */
 /* SCALE */
 .scale {
@@ -1017,16 +1030,3 @@ button {
   50% {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(-180deg); } }
-
-svg:hover {
-  -webkit-transform: scale(1.6);
-  -ms-transform: scale(1.6);
-  transform: scale(1.6); }
-
-svg {
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; }

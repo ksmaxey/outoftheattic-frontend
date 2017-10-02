@@ -27,3 +27,23 @@ $yellow: #cc9900;
 .limit-min-max {
   @include responsive-font(3vw, 40px, 50px);
 }
+
+//BREAKPOINTS
+
+$breakpoints: (
+  mobile: 400px,
+  tablet: 800px,
+  desktop: 1000px,
+  large: 1200px
+);
+
+@mixin breakpoint($breakspoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Unfortunately, no value could be retrieved '#{breakpoint}' . " + "Please make sure it is defiend in '$breakpoints' map."
+  }
+}
