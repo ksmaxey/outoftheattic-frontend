@@ -51,3 +51,7 @@
 	};
 
 }( jQuery ));
+
+
+$(".youtube-link").grtyoutube({
+});
