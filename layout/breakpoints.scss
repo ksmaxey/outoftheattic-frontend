@@ -1,6 +1,20 @@
 //Header Breakpoint for $tablet
 
-//Events Breakpoint CSS
+//About Breakpoints
+
+.about-container {
+  @include breakpoint(desktop) {
+    display: flex;
+    flex-direction: row;
+    main {
+      width: 70%;
+      margin-right: 40px;
+      margin-top: -20px;
+    }
+  }
+}
+
+//Events Breakpoint
 
 .event {
   @include breakpoint(tablet) {
@@ -17,22 +31,11 @@
       margin-right: auto;
 
     }
-    p {
-
-    }
-    h2 {
-
-    }
     a {
       float: right;
-
-
     }
   }
-};
-
-
-
+}
 
 //Breakpoints for Expanded Events Page
 
@@ -52,3 +55,22 @@
     margin: auto;
   }
 }
+
+footer {
+  @include breakpoint(tablet) {
+    ul {
+      display: flex;
+      flex-direction: row;
+        li {
+          flex-grow: 1;
+          width: calc(100% * (1/2));
+        }
+      }
+    }
+    @include breakpoint(desktop) {
+      max-height: 210px;
+        li {
+          margin: 40px;
+        }
+      }
+  }

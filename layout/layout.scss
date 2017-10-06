@@ -70,8 +70,8 @@ footer {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.5);
   position: relative;
-  left:0px;
-  bottom:0px;
+  left: 0;
+  bottom: 0;
   font-family: type;
   letter-spacing: 2px;
   display: flex;
@@ -169,17 +169,11 @@ iframe {
   max-width: 100%;
 }
 
-.featured {
-
-}
-
 //EVENTS
 
 .events-container {
   border: 4px solid $yellow;
-  div:last-child {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 100px;
 }
 
 .expanded-wrapper,
@@ -208,6 +202,10 @@ iframe {
     max-width: 500px;
     padding: 10px;
   }
+}
+
+#event-footer {
+  margin-top: 100px;
 }
 //BLOG
 
