@@ -188,7 +188,6 @@ iframe {
   margin: auto;
   p {
     padding: 10px;
-    text-align: justify;
   }
   button {
     margin: 20px;
@@ -203,7 +202,8 @@ iframe {
   }
 }
 
-#event-footer {
+#event-footer,
+#event-expand-footer {
   margin-top: 100px;
 }
 //BLOG
@@ -460,6 +460,7 @@ textarea {
 .about,
 .featured,
 .events,
+.blog-body,
 .blog,
 .expand,
 .appraisals,
@@ -484,6 +485,8 @@ button {
   background: $maroon;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
   &:hover {
     background: $yellow;
     text-decoration: none;
