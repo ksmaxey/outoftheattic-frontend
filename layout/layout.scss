@@ -150,6 +150,10 @@ a {
     }
 }
 
+.about-container {
+  padding: 10px;
+}
+
 #emailkern {
   letter-spacing: 2px;
 }
@@ -163,11 +167,6 @@ iframe {
 }
 
 //FEATURED ITEMS
-
-.featured-container {
-  width: 1200px;
-  max-width: 100%;
-}
 
 //EVENTS
 
@@ -235,8 +234,7 @@ iframe {
 }
 
 .blog-large,
-.blog-medium,
-.blog-small {
+.blog-medium{
   padding: 20px;
   background-color: $gray;
   border: 4px solid $yellow;
@@ -253,18 +251,20 @@ iframe {
 }
 
 .blog-small {
+  height: 70px;
+  padding: 10px;
+  background-color: $gray;
+  border: 4px solid $yellow;
+  margin: 10px;
   h3 {
     font-size: em(14px);
-    display: inline-block;
-    padding-right: 10px;
+    text-align: left;
+    float: left;
   }
-}
-
-.truncate {
-  width: 310px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  button {
+    float: right;
+    font-size: em(15px);
+  }
 }
 
 //Expanded Blog Pages
@@ -444,6 +444,7 @@ textarea {
 
 .home-container,
 .about-container,
+.featured-container,
 .events-container,
 .blog-container,
 .expand-container,
@@ -483,7 +484,6 @@ button {
   background: $maroon;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin-bottom: 15px;
   &:hover {
     background: $yellow;
     text-decoration: none;

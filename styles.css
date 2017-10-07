@@ -735,6 +735,31 @@ svg {
     footer li {
       margin: 40px; } }
 
+@media (min-width: 800px) {
+  .blog .blog-large img {
+    display: block;
+    margin: auto; }
+  .blog h3 {
+    text-align: center; }
+  .blog .blog-large p {
+    padding-top: 20px; }
+  .blog .blog-large button,
+  .blog .blog-medium button {
+    margin-left: 70%; }
+  .blog .blog-large p,
+  .blog .blog-medium p {
+    max-width: 700px;
+    margin: auto; }
+  .blog .blog-medium .blog-medium-content {
+    max-width: 700px;
+    margin: auto; }
+  .blog .blog-medium button {
+    margin-top: 20px; }
+  .blog .blog-small-content {
+    width: 100%;
+    max-width: 700px;
+    margin: auto; } }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -870,6 +895,9 @@ a {
   text-align: center;
   color: #cc9900; }
 
+.about-container {
+  padding: 10px; }
+
 #emailkern {
   letter-spacing: 2px; }
 
@@ -879,10 +907,6 @@ iframe {
   margin-left: auto;
   display: block;
   padding-bottom: 20px; }
-
-.featured-container {
-  width: 1200px;
-  max-width: 100%; }
 
 .events-container {
   border: 4px solid #cc9900;
@@ -936,8 +960,7 @@ iframe {
   line-height: 1.5; }
 
 .blog-large,
-.blog-medium,
-.blog-small {
+.blog-medium {
   padding: 20px;
   background-color: #808080;
   border: 4px solid #cc9900;
@@ -949,17 +972,19 @@ iframe {
   margin: auto;
   float: right; }
 
-.blog-small h3 {
-  font-size: 0.875em;
-  display: inline-block;
-  padding-right: 10px; }
-
-.truncate {
-  width: 310px;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis; }
+.blog-small {
+  height: 70px;
+  padding: 10px;
+  background-color: #808080;
+  border: 4px solid #cc9900;
+  margin: 10px; }
+  .blog-small h3 {
+    font-size: 0.875em;
+    text-align: left;
+    float: left; }
+  .blog-small button {
+    float: right;
+    font-size: 0.9375em; }
 
 .expand aside {
   font-family: type;
@@ -1103,6 +1128,7 @@ textarea {
 
 .home-container,
 .about-container,
+.featured-container,
 .events-container,
 .blog-container,
 .expand-container,
@@ -1135,8 +1161,7 @@ button {
   font-size: 20px;
   background: #521F19;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  margin-bottom: 15px; }
+  text-decoration: none; }
   button:hover {
     background: #cc9900;
     text-decoration: none; }

@@ -73,4 +73,51 @@ footer {
           margin: 40px;
         }
       }
+    }
+
+//Blog Breakpoints
+
+.blog {
+  @include breakpoint (tablet) {
+    .blog-large {
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+    .blog-large {
+      p {
+        padding-top: 20px;
+      }
+    }
+    .blog-large,
+    .blog-medium {
+        button {
+          margin-left: 70%;
+        }
+        p {
+          max-width: 700px;
+          margin: auto;
+        }
+      }
+      .blog-medium {
+        .blog-medium-content {
+          max-width: 700px;
+          margin: auto;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+      .blog-small-content {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+      }
+    }
   }
+
+//Truncate Breakpoints for Blog Small
