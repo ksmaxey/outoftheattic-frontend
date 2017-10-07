@@ -270,14 +270,48 @@ iframe {
 //Expanded Blog Pages
 
 .expand {
+    h1 {
+      font-family: badguy;
+      color: $yellow;
+      text-align: center;
+      font-size: em(30px);
+      letter-spacing: 1px;
+    }
   aside {
     font-family: type;
     letter-spacing: 1.5px;
     line-height: 1.5;
+    font-size: 20px;
+    h2 {
+      color: $maroon;
+      font-weight: bold;
+    }
   }
-  img {
+  button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #expand-blog-image {
     max-width: 100%;
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
   }
+  .description,
+  .skills {
+    padding: 10px;
+  }
+}
+
+//Scrollable Box on Expanded Blog Pages
+
+.scrollable {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  overflow: scroll;
 }
 
 //EVENTS
@@ -447,7 +481,6 @@ textarea {
 .featured-container,
 .events-container,
 .blog-container,
-.expand-container,
 .appraisals-container,
 .contact-container {
   width: 100%;
@@ -462,7 +495,6 @@ textarea {
 .events,
 .blog-body,
 .blog,
-.expand,
 .appraisals,
 .contact {
   h1 {

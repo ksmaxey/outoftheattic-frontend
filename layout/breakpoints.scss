@@ -89,13 +89,6 @@ footer {
 //Blog Breakpoints
 
 .blog {
-  @include breakpoint(mobile) {
-    .blog-medium {
-      img {
-
-      }
-    }
-  }
   @include breakpoint (tablet) {
     .blog-large {
       img {
@@ -180,3 +173,20 @@ footer {
         }
       }
     }
+
+//Expanded Blog Breakpoints
+
+.blog-expand-grid {
+  @include breakpoint (desktop){
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: end;
+    margin: auto;
+  }
+  #expand-blog-image {
+    padding: 20px;
+  }
+}

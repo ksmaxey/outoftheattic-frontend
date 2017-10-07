@@ -807,6 +807,24 @@ svg {
       grid-column: 8 / 12;
       grid-row: 10 / 11; } }
 
+@media (min-width: 1200px) {
+  .blog-expand-grid {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: end;
+    -ms-flex-line-pack: end;
+    align-content: end;
+    margin: auto; } }
+
+.blog-expand-grid #expand-blog-image {
+  padding: 20px; }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -1033,13 +1051,43 @@ iframe {
     float: right;
     font-size: 0.9375em; }
 
+.expand h1 {
+  font-family: badguy;
+  color: #cc9900;
+  text-align: center;
+  font-size: 1.875em;
+  letter-spacing: 1px; }
+
 .expand aside {
   font-family: type;
   letter-spacing: 1.5px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 20px; }
+  .expand aside h2 {
+    color: #521F19;
+    font-weight: bold; }
 
-.expand img {
-  max-width: 100%; }
+.expand button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.expand #expand-blog-image {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  padding-bottom: 20px; }
+
+.expand .description,
+.expand .skills {
+  padding: 10px; }
+
+.scrollable {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  overflow: scroll; }
 
 .events-container {
   background-color: #808080; }
@@ -1178,7 +1226,6 @@ textarea {
 .featured-container,
 .events-container,
 .blog-container,
-.expand-container,
 .appraisals-container,
 .contact-container {
   width: 100%;
@@ -1190,7 +1237,6 @@ textarea {
 .events h1,
 .blog-body h1,
 .blog h1,
-.expand h1,
 .appraisals h1,
 .contact h1 {
   font-family: badguy;
