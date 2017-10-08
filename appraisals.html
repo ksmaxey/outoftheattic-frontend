@@ -28,19 +28,23 @@
   </header>
   <h1>Appraisals</h1>
   <div class="appraisals-container">
-    <form action="/file-upload" class="dropzone">
-      <div class="fallback">
-        <input name="file" type="file" multiple />
+    <div class="app-item1">
+      <form action="/file-upload" class="dropzone">
+        <div class="fallback">
+          <input name="file" type="file" multiple />
+        </div>
+      </form>
+      <div class="app-first">
+        <p>First</p>
+        <p>Show Us Some Photos (click or drag files to upload)</p>
       </div>
-    </form>
-    <div class="app-first">
-      <p>First</p>
-      <p>Show Us Some Photos (click or drag files to upload)</p>
-    </div>
+  </div>
     <div class="app-message">
       <textarea name="name" rows="8" cols="80" placeholder="Description"></textarea>
-      <p>Then</p>
-      <p>Tell Us About Your Item</p>
+      <div class="app-second">
+        <p>Then</p>
+        <p>Tell Us About Your Item</p>
+      </div>
     </div>
     <div class="app-contact">
       <div>
@@ -52,8 +56,8 @@
       <div>
         <input type="text" name="name" placeholder="Phone" size="25" maxlength="12"/>
       </div>
-      <p>Lastly</p>
-      <p>Provide Your Information</p>
+        <p>Lastly</p>
+        <p>Provide Your Information</p>
     </div>
     <div class="app-button">
       <button type="button" name="button" id="myBtn">Submit</button>
@@ -67,7 +71,7 @@
       </div>
     </div>
   </div>
-  <footer>
+  <footer id="app-footer">
     <ul>
       <li>
         <svg version="1.1" class="footer-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

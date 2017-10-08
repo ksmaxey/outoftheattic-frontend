@@ -203,7 +203,8 @@ iframe {
 }
 
 #event-footer,
-#event-expand-footer {
+#event-expand-footer,
+#app-footer {
   margin-top: 100px;
 }
 //BLOG
@@ -351,6 +352,9 @@ iframe {
 //APPRAISALS
 
 .appraisals-container {
+  background-color: rgba(128,128,128, 0.4);
+  padding: 30px;
+  border: 1px solid $yellow;
   p {
     letter-spacing: 1.5px;
   }
@@ -362,6 +366,7 @@ iframe {
     opacity: 1;
     padding: 10px;
     font-size: em(20px);
+    max-width: 800px;
   }
   button {
     font-size: em(30px);
@@ -484,7 +489,7 @@ textarea {
 .appraisals-container,
 .contact-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: auto;
 }
 
