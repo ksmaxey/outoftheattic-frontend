@@ -950,7 +950,7 @@ header {
   justify-content: center;
   font-family: SignPainter;
   margin-top: 50px; }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     .menu {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

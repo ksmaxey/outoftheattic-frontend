@@ -42,7 +42,7 @@ header {
   justify-content: center;
   font-family: SignPainter;
   margin-top: 50px;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     flex-direction: column;
   }
 
