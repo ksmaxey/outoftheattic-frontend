@@ -1025,8 +1025,7 @@ footer {
     display: block; }
 
 .enter {
-  background-color: transparent;
-  border: 5px solid #521F19;
+  background-color: #521F19;
   color: white;
   padding: 10px;
   cursor: pointer;
