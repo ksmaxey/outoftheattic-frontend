@@ -50,12 +50,11 @@ header {
     padding: 30px;
     max-width: 1000px;
     margin: auto;
-
     img {
       height: 100%;
       margin-right: auto;
-
     }
+
     a {
       float: right;
     }
@@ -79,6 +78,7 @@ header {
   @include breakpoint(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 1fr 1fr;
     max-width: 1200px;
     width: 100%;
     background-color: $gray;
@@ -103,6 +103,7 @@ footer {
         }
       }
     }
+
     @include breakpoint(desktop) {
       max-height: 210px;
         li {
@@ -121,14 +122,17 @@ footer {
         margin: auto;
       }
     }
+
     h3 {
       text-align: center;
     }
+
     .blog-large {
       p {
         padding-top: 20px;
       }
     }
+
     .blog-large,
     .blog-medium {
         button {
@@ -139,6 +143,7 @@ footer {
           margin: auto;
         }
       }
+
       .blog-medium {
         .blog-medium-content {
           max-width: 700px;
@@ -148,6 +153,7 @@ footer {
         margin-top: 20px;
       }
     }
+
       .blog-small-content {
         width: 100%;
         max-width: 700px;
@@ -160,7 +166,9 @@ footer {
       .blog-container {
         display: grid;
         grid-template-columns: repeat(12,1fr);
+        -ms-grid-columns: repeat(12,1fr);
         grid-template-rows: repeat(12,1fr);
+          -ms-grid-rows: repeat(12,1fr);
         justify-content: center;
         align-content: end;
         margin: auto;
@@ -207,10 +215,12 @@ footer {
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 1fr 1fr;
     justify-content: center;
     align-content: end;
     margin: auto;
   }
+
   #expand-blog-image {
     padding: 20px;
   }
@@ -222,11 +232,13 @@ footer {
       max-width: 600px;
       margin: auto;
     }
+
     input[type="text"],
     input[type="email"],
     input[type="submit"] {
       margin-bottom: 10px;
     }
+
     .app-first,
     .app-second,
     .app-contact {
@@ -236,6 +248,7 @@ footer {
       text-align: center;
       padding-top: 10px;
     }
+
     .app-message {
       textarea {
         display: block;
@@ -245,6 +258,7 @@ footer {
         }
       }
     }
+
     @include breakpoint (desktop) {
       display: grid;
       grid-gap: 20px;
@@ -252,10 +266,12 @@ footer {
       align-content: end;
       margin: auto;
     }
+
     .app-item1 {
       grid-column: 1 / 7;
       grid-row: 1 / 6;
     }
+
     .app-message {
       grid-column: 7 / 12;
       grid-row: 1 / 6;
@@ -263,10 +279,12 @@ footer {
         height: 280px;
       }
     }
+
     .app-contact {
       grid-column: 1 / 12;
       grid-row: 6 / 11;
     }
+
     .app-button {
       grid-column: 10 / 11;
     }
