@@ -115,7 +115,9 @@ svg {
   src: url(fonts/BadGuyBlack.otf); }
 
 @font-face {
-  src: url(fonts/SignPainter.ttc); }
+  font-family: SignPainter;
+  src: url(fonts/SignPainter.ttc);
+  src: url("fonts/Signpainter.ttc") format("ttc"); }
 
 .limit-min {
   font-size: 4vw; }
