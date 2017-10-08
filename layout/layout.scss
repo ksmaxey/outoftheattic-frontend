@@ -17,13 +17,15 @@ body {
   color: white;
   padding: 10px;
   width: 100%;
+  margin: 0;
+  position: relative;
 }
 
 //HEADER
 
 header {
-  max-width: 1600px;
-  width: 100%;
+  max-width: 100%;
+  width: 1800px;
   margin: 0 auto;
 }
 
@@ -73,8 +75,10 @@ footer {
   left: 0;
   bottom: 0;
   font-family: type;
+  font-size: em(12px);
   letter-spacing: 2px;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   ul {
     list-style: none;
@@ -86,7 +90,7 @@ footer {
 }
 
 .footer-svg {
-  max-width: 40px;
+  max-width: 20px;
 }
 
 //HOME SCREEN
@@ -101,7 +105,7 @@ footer {
   font-family: SignPainter;
   display: block;
     img {
-      width: 900px;
+      width: 700px;
       max-width: 100%;
       margin: auto;
       display: block;
@@ -200,12 +204,6 @@ iframe {
     max-width: 500px;
     padding: 10px;
   }
-}
-
-#event-footer,
-#event-expand-footer,
-#app-footer {
-  margin-top: 100px;
 }
 //BLOG
 
@@ -487,10 +485,11 @@ textarea {
 .events-container,
 .blog-container,
 .appraisals-container,
-.contact-container {
+.form-container {
   width: 100%;
   max-width: 1800px;
   margin: auto;
+  margin-bottom: 300px;
 }
 
 //ELEMENT STYLING
