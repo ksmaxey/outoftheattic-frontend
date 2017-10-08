@@ -24,9 +24,16 @@ body {
 //HEADER
 
 header {
-  max-width: 100%;
-  width: 1800px;
+  width: 100%;
+  max-width: 1800px;
   margin: 0 auto;
+}
+
+#logo {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  display: block;
 }
 
 .menu {
@@ -34,17 +41,14 @@ header {
   align-items: center;
   justify-content: center;
   font-family: SignPainter;
-  @media (max-width:40em){
+  margin-top: 50px;
+  @media (max-width: 500px) {
     flex-direction: column;
   }
 
   .logo {
     max-width: 200px;
     padding-top: 10px;
-  }
-
-  .icons-div {
-    padding-left: 10px;
   }
 
   .icons {
@@ -170,8 +174,6 @@ iframe {
   padding-bottom: 20px;
 }
 
-//FEATURED ITEMS
-
 //EVENTS
 
 .events-container {
@@ -204,6 +206,10 @@ iframe {
     max-width: 500px;
     padding: 10px;
   }
+}
+
+.expanded-wrapper {
+  margin-bottom: 100px;
 }
 //BLOG
 
@@ -290,7 +296,7 @@ iframe {
     display: block;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
   }
   #expand-blog-image {
     max-width: 100%;

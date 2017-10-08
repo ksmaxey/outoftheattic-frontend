@@ -1,4 +1,29 @@
-//Header Breakpoint for $tablet
+//Header Breakpoints
+header {
+  @include breakpoint (tablet) {
+    padding-bottom: 150px;
+  }
+  #logo {
+  @include breakpoint (tablet) {
+    float: left;
+    }
+  }
+  .menu {
+    @include breakpoint (mobile) {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      }
+    }
+  .icons-div {
+    @include breakpoint (mobile) {
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
 
 //About Breakpoints
 
