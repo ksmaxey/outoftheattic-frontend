@@ -51,7 +51,3 @@
 	};
 
 }( jQuery ));
-
-
-$(".youtube-link").grtyoutube({
-});
