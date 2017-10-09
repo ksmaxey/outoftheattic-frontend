@@ -503,14 +503,14 @@ template {
 
 @font-face {
   font-family: type;
-  src: url(fonts/AmericanTypewriter.ttc); }
+  src: url(fonts/AmericanTypewriter.ttf); }
 
 @font-face {
   font-family: badguy;
   src: url(fonts/BadGuyBlack.otf); }
 
 @font-face {
-  src: url(fonts/SignPainter.ttc);
+  src: url(fonts/SignPainter.ttf);
   src: url("fonts/Signpainter.ttc") format("ttc"); }
 
 .limit-min {
