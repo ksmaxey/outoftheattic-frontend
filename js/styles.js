@@ -1,6 +1,6 @@
-//@prepros-preend js/jquery-3.2.1.min.js
-//@prepros-preend js/dropzone.js
-//@prepros-preend js/grtyoutube-popup.js
+//@prepros-prepend jquery-3.2.1.min.js
+//@prepros-prepend dropzone.js
+//@prepros-prepend grt-youtube-popup.js
 
 $(".youtube-link").grtyoutube({
 });
