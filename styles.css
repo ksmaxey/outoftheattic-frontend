@@ -510,8 +510,7 @@ template {
   src: url(fonts/BadGuyBlack.otf); }
 
 @font-face {
-  src: url(fonts/SignPainter.ttf);
-  src: url("fonts/Signpainter.ttc") format("ttc"); }
+  src: url(fonts/SignPainter.ttf); }
 
 .limit-min {
   font-size: 4vw; }
@@ -1424,7 +1423,11 @@ footer {
     width: 700px;
     max-width: 100%;
     margin: auto;
-    display: block; }
+    display: block;
+    padding: 10px; }
+  .home h1 {
+    padding-left: 60px;
+    position: relative; }
 
 .enter {
   background-color: #521F19;
@@ -1612,7 +1615,7 @@ iframe {
 
 .appraisals-container {
   background-color: rgba(128, 128, 128, 0.4);
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #cc9900; }
   .appraisals-container p {
     letter-spacing: 1.5px; }
@@ -1664,7 +1667,8 @@ iframe {
   background-size: cover; }
 
 .form-container {
-  color: #cc9900; }
+  color: #cc9900;
+  padding: 10px; }
 
 #form {
   width: 700px;
